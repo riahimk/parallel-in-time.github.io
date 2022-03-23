@@ -19,6 +19,22 @@
 % We would very much appreciate a link/reference to parallel-in-time.org.
 %
 
+@unpublished{Riahi2022PiTSBiCGPI,
+  title={PiTSBiCG: Parallel in Time Stable Bi-Conjugate Gradient Algorithm},
+  author={Mohamed Kamel Riahi},
+  year={2022}
+url={https://arxiv.org/abs/2203.10148},
+author_keywords={Parallel in time algorithm, BiCGStab, parareal, Acceleration, Parallel computing,
+Numerical Simulation of PDEs},document_type={Article},
+abstract={This paper presents a new algorithm for the parallel in time (PiT) numerical simulation of time-dependent partial/ordinary differential equations. We propose a reliable alternative to the well
+know parareal in time algorithm, by formulating the parallel in time problem algebraically and
+solve it using an adapted Bi-Conjugate gradient stabilized method. The proposed Parallel in
+time Stable Bi-Conjugate algorithm (PiTSBiCG) has a great potential in stabilizing the parallel
+resolution for a variety of problems. In this work, we describe the mathematical approach to the
+new algorithm and provide numerical evidence that shows its superiority to the standard parareal
+method.}
+}
+
 @article{Nievergelt1964,
 	author = {Nievergelt, J.},
 	doi = {10.1145/355588.365137},
@@ -1824,7 +1840,23 @@ platform and its insensitivity to network latency.}},
 	url = {http://dx.doi.org/10.1109/IPDPSW.2012.181},
 	year = {2012},
 }
-
+@inbook{Maday2013,
+abstract = {In this paper, we present a method that enables to solve in parallel the Euler‚ÄìLagrange system associated with the optimal control of a parabolic equation. Our approach is based on an iterative update of a sequence of intermediate targets that gives rise to independent sub-problems that can be solved in parallel. This method can be coupled with the parareal in time algorithm. Numerical experiments show the efficiency of our method.},
+address = {Basel},
+author = {Maday, Yvon and Riahi, Mohamed-Kamel and Salomon, Julien},
+booktitle = {International Series of Numerical Mathematics},
+chapter = {Control an},
+doi = {10.1007/978-3-0348-0631-2_5},
+edition = {Springer B},
+editor = {Bredies, Kristian and Clason, Christian and Kunisch, Karl and Winckel, Gregory},
+isbn = {978-3-0348-0631-2},
+keywords = {Control Optimization PDEs Parareal in time algorit},
+pages = {79--92},
+publisher = {Springer Basel},
+title = {{Control and Optimization with PDE Constraints}},
+url = {http://dx.doi.org/10.1007/978-3-0348-0631-2{\_}5},
+year = {2013}
+}
 @article{BylaskaEtAl2013,
 	author = {Bylaska, Eric J. and Weare, Jonathan Q. and Weare, John H.},
 	doi = {10.1063/1.4818328},
@@ -2421,7 +2453,17 @@ simulations are discussed.}},
 	url = {http://dx.doi.org/10.1016/j.jcp.2014.11.034},
 	year = {2014},
 }
-
+@article{Riahi2015,
+abstract = {In this paper we present a new steepest-descent type algorithm for convex optimization problems. Our algorithm pieces the unknown into sub-blocs of unknowns and considers a partial optimization over each sub-bloc. In quadratic optimization, our method involves Newton technique to compute the step-lengths for the sub-blocs resulting descent directions. Our optimization method is fully parallel and easily implementable, we first presents it in a general linear algebra setting, then we highlight its applicability to a parabolic optimal control problem, where we consider the blocs of unknowns with respect to the time dependency of the control variable. The parallel tasks, in the last problem, turn ``on'' the control during a specific time-window and turn it ``off'' elsewhere. We show that our algorithm significantly improves the computational time compared with recognized methods. Convergence analysis of the new optimal control algorithm is provided for an arbitrary choice of partition. Numerical experiments are presented to illustrate the efficiency and the rapid convergence of the method.},
+author = {Riahi, M. K.},
+doi = {10.1007/s11075-015-0060-0},
+issn = {1572-9265},
+journal = {Numerical Algorithms},
+pages = {1--32},
+title = {{A new approach to improve ill-conditioned parabolic optimal control problem via time domain decomposition}},
+url = {http://dx.doi.org/10.1007/s11075-015-0060-0},
+year = {2015}
+}
 @misc{Ariel2015,
 	abstract = {{We introduce a new parallel in time (parareal) algorithm which couples multiscale integrators with
 fully resolved fine scale integration and computes highly oscillatory solutions for a class of ordinary
